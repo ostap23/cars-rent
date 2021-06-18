@@ -1,29 +1,45 @@
-<p>header works!</p>
-<hr>
-<!-- Інтерполяція -->
-<h2>Hello {{ name }}</h2>
-<h2>{{ 'Hello' + name }}</h2>
-<hr>
-<h2>MyCount = {{ count }}</h2>
-<h2>Visible = {{ isVisible }}</h2>
-<hr>
-<h3>Car: {{ car.mark }} {{ car.model }}</h3>
-<hr>
-<h3>Users: {{ allUsers[1] }} {{ allUsers[2] }}</h3>
-<h4>{{ printFullCar() }}</h4>
+<header>
+    <div class="header__main">
+        <div class="main__logo">
+            <div class="logo">
+                <div class="logo__name">
+                    <p class="name1">LUX</p>
+                    <p class="name2">auto</p>
+                </div>
+                <div class="logo__desc">
+                    Оренда автомобілів
+                </div>
+            </div>
+        </div>
+        <div class="main__sign">
+            <button class="sign__In">Sign In</button>
+            <button class="sign__register">Register</button>
+            <select name="lang">
+                <option disabled selected value="Мова">Мова</option>
+                <option value="Українська">Українська</option>
+                <option value="English">English</option>
+            </select>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="menu__btns">
+            <button>Головна</button>
+            <button>Сервіси</button>
+            <button>Оренда авто</button>
+            <button>Акції</button>
+            <button>Правила</button>
+            <button>Контакти</button>
+        </div>
+        <div class="menu__search">
+            <form action="">
+                <div class="form">
+                    <input type="text" name="search">
+                    <input type="button" value="S">
+                </div>
 
-<!-- Одностороннє зв'язування -->
-<a [href]="pageUrl">{{ pageName }}</a>
-<hr>
-<a [href]="pageUrl" [textContent]="pageName"></a>
-
-<!-- Event handling -->
-<button (click)="showMessage($event)">Click me</button>
-<h2>Message: {{ message }}</h2>
-
-<!-- Двостороннє з'єднання -->
-<hr>
-<input type="text" [(ngModel)]="login" name="login">
-<input type="button" (click)="getLogin()" value="get">
-<h4>Login: {{ login }}</h4>
-<h4>Message: {{ message }}</h4>
+            </form>
+        </div>
+    </div>
+</header>
+<img src="../../../assets/images/header-back.jpg" alt="">
+<h1>dsadsadsa</h1>
