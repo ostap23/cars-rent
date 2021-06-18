@@ -1,0 +1,29 @@
+<p>header works!</p>
+<hr>
+<!-- Інтерполяція -->
+<h2>Hello {{ name }}</h2>
+<h2>{{ 'Hello' + name }}</h2>
+<hr>
+<h2>MyCount = {{ count }}</h2>
+<h2>Visible = {{ isVisible }}</h2>
+<hr>
+<h3>Car: {{ car.mark }} {{ car.model }}</h3>
+<hr>
+<h3>Users: {{ allUsers[1] }} {{ allUsers[2] }}</h3>
+<h4>{{ printFullCar() }}</h4>
+
+<!-- Одностороннє зв'язування -->
+<a [href]="pageUrl">{{ pageName }}</a>
+<hr>
+<a [href]="pageUrl" [textContent]="pageName"></a>
+
+<!-- Event handling -->
+<button (click)="showMessage($event)">Click me</button>
+<h2>Message: {{ message }}</h2>
+
+<!-- Двостороннє з'єднання -->
+<hr>
+<input type="text" [(ngModel)]="login" name="login">
+<input type="button" (click)="getLogin()" value="get">
+<h4>Login: {{ login }}</h4>
+<h4>Message: {{ message }}</h4>
