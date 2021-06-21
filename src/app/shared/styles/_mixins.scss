@@ -1,0 +1,9 @@
+@mixin btn-line($pos, $h, $w, $left, $top, $back, $tr) {
+    position: $pos;
+    height: $h;
+    width: $w;
+    left: $left;
+    top: $top;
+    background: $back;
+    transition: $tr;
+}
